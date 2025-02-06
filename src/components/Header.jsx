@@ -19,13 +19,13 @@ const Header = () => {
       {/* Center Navigation - Always Visible */}
       <nav className="flex space-x-6 font-bold">
         <a href="#" className="hover:text-gray-600">
-          PROGRAMMING
+          ABOUT
         </a>
         <a href="#" className="hover:text-gray-600">
-          VOLUNTEER
+          PROJECTS
         </a>
         <a href="#" className="hover:text-gray-600">
-          DONATE
+          CONTACT
         </a>
         <a href="#" className="hover:text-gray-600">
           PODCASTS
