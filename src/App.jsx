@@ -1,8 +1,11 @@
+import Header from "./components/Header.jsx";
+import Card from "./components/Card.jsx";
 const App = () => {
   return (
     <div>
-      <div className="Container bg-red-500">
-        <h1>Hello tailwind</h1>
+      <div>
+        <Header />
+        <Card />
       </div>
     </div>
   );
