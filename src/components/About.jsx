@@ -1,7 +1,7 @@
 export const About = () => {
   return (
-    <div className="max-w-4xl text-left mt-0 ml-4">
-      <h1 className="text-2xl font-bold mb-4">ABOUT ME</h1>
+    <div className="max-w-4xl text-left mt-10 ml-4 pt-10">
+      <h1 className="text-5xl font-bold mb-4">ABOUT ME</h1>
       <p className="text-lg leading-relaxed">
         I am a driven and aspiring software developer with a passion for
         transforming innovative ideas into user-friendly software solutions.
