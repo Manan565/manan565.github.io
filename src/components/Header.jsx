@@ -27,12 +27,6 @@ const Header = () => {
         <a href="#" className="hover:text-gray-600">
           CONTACT
         </a>
-        <a href="#" className="hover:text-gray-600">
-          PODCASTS
-        </a>
-        <a href="#" className="hover:text-gray-600">
-          MUSIC
-        </a>
       </nav>
     </header>
   );
