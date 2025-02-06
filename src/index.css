@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact > * {
+  margin-right: 500px; /* Adds space between elements */
+}
+.contact > *:last-child {
+  margin-right: 0; /* Removes margin from last item */
+}
