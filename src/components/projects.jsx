@@ -42,3 +42,23 @@ const projs = [
       "A simple react application that allows a group of friends to split any desired bill",
   },
 ];
+
+const Projects = () => {
+  return (
+    <div className="p-10">
+      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+      {projs.map((item, index) => (
+        <div key={index} className="mb-6 p-6 border rounded-lg shadow-lg">
+          <h2 className="text-2xl font-bold">{item.title}</h2>
+          <p className="text-gray-600">
+            <strong>Technologies:</strong> {item.technologies.join(", ")}
+          </p>
+          <p className="mt-2">{item.description}</p>
+          <p className="text-sm text-gray-500 mt-2">Date: {item.date}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Projects;
