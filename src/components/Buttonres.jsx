@@ -1,0 +1,78 @@
+import styled from "styled-components";
+
+const Buttonres = () => {
+  return (
+    <StyledWrapper>
+      <div className="wrapper">
+        <button className="button">Confirm Transaction</button>
+      </div>
+      <div className="wrapper">
+        <button className="button">Confirm Transaction</button>
+      </div>
+    </StyledWrapper>
+  );
+};
+
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: row; /* Arrange buttons side by side */
+  justify-content: flex-start; /* Align buttons to the left */
+  gap: 120px; /* Space between buttons */
+  margin-top: 40px; /* Adds space above both buttons */
+
+  .wrapper {
+    display: inline-block;
+    border-radius: 28px;
+    box-shadow: inset 12px 0 12px rgba(255, 255, 255, 0.25),
+      inset -2px -4px 8px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(
+      336deg,
+      rgba(255, 196, 32, 1) 0%,
+      rgba(254, 75, 8, 1) 39%,
+      rgba(254, 75, 8, 1) 57%,
+      rgba(255, 196, 32, 1) 100%
+    );
+    padding: 12px; /* Adds slight padding to the wrapper */
+  }
+
+  .button {
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: inherit;
+    font-weight: 600;
+    position: relative;
+    border: none;
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s;
+    width: fit-content;
+    display: inline-block;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    inset-block-end: -2px;
+    border-radius: inherit;
+    background: linear-gradient(to top, #ffc42088, transparent);
+    z-index: -1;
+    filter: blur(5px);
+    transition: all 0.2s;
+  }
+
+  .button:hover::before {
+    filter: blur(0);
+    opacity: 0;
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  button:focus {
+    outline-color: #fff;
+  }
+`;
+
+export default Buttonres;
