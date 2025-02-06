@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Cardpro = ({ title, date, description }) => {
+const Cardpro = ({ title, description }) => {
   return (
     <StyledWrapper>
       <div className="card">
@@ -10,7 +10,6 @@ const Cardpro = ({ title, date, description }) => {
           <h2>{title}</h2>
 
           <p className="desc">{description}</p>
-          <p className="date">{date}</p>
         </div>
       </div>
     </StyledWrapper>
