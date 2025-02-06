@@ -1,6 +1,6 @@
 const Card = () => {
   return (
-    <div className="h-screen flex items-center pl-20 mt-[-160px]">
+    <div className="h-screen flex items-center pl-5 mt-[-160px] pb-0 mb-0">
       <div className="h-[20em] w-[35em] bg-white rounded-[2em] overflow-hidden relative group p-6 z-0 text-left shadow-2xl">
         {/* Expanding Circle Effect */}
         <div className="circle absolute h-[10em] w-[10em] -top-[5em] -right-[5em] rounded-full bg-[#FF5800] group-hover:scale-[800%] duration-500 z-[-1]" />
