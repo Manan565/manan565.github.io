@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Aligns items vertically */
+}
+
+.contact > * {
+  flex: 1; /* Ensures equal width for both elements */
+  margin: 0 10px; /* Adds spacing between them */
+}
+
+.contact > *:last-child {
+  margin-right: 0;
+}
