@@ -10,12 +10,18 @@ const App = () => {
         <Header />
         <main className="px-20">
           <Card />
+
           <section id="about">
             <About />
           </section>
 
-          <Projects />
-          <Contact />
+          <section id="projects">
+            <Projects />
+          </section>
+
+          <section id="contact">
+            <Contact />
+          </section>
         </main>
       </div>
     </div>
