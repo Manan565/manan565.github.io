@@ -10,9 +10,9 @@ const experiences = [
 ];
 
 export const About = () => {
-  const [skills, updateskills] = useState(true);
-  const [certification, updatecertification] = useState(false);
-  const [education, updateeducation] = useState(false);
+  const [skills, updateSkills] = useState(true);
+  const [certification, updateCertification] = useState(false);
+  const [education, updateEducation] = useState(false);
 
   const handleSelection = (section) => {
     updateSkills(section === "skills");
