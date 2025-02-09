@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,6 +60,9 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <FaLinkedin className="text-blue-600 text-3xl hover:opacity-80" />
+          </a>
+          <a href="mailto:mma324@sfu.ca">
+            <FaEnvelope className="text-red-600 text-3xl hover:opacity-80" />
           </a>
         </div>
       </div>
