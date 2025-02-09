@@ -18,7 +18,7 @@ const Header = () => {
 
       {/* Center Navigation - Always Visible */}
       <nav className="flex space-x-6 font-bold">
-        <a href="#" className="hover:text-gray-600">
+        <a href="#about" className="hover:text-gray-600">
           ABOUT
         </a>
         <a href="#" className="hover:text-gray-600">

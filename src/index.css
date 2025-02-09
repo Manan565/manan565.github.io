@@ -15,3 +15,7 @@
 .contact > *:last-child {
   margin-right: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
