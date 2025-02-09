@@ -24,7 +24,7 @@ const Header = () => {
         <a href="#project" className="hover:text-gray-600">
           PROJECTS
         </a>
-        <a href="#contact" className="hover:text-gray-600">
+        <a href="#contacts" className="hover:text-gray-600">
           CONTACT
         </a>
       </nav>
