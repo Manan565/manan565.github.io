@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -44,10 +46,26 @@ const Contact = () => {
           have an exciting project in mind, want to discuss potential job
           opportunities, or simply connect, I'd love to hear from you.
         </p>
+        <div className="flex space-x-4 mt-4">
+          <a
+            href="https://github.com/Manan565"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-purple-600 text-3xl hover:opacity-80" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/manan-mehta-073630322/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-blue-600 text-3xl hover:opacity-80" />
+          </a>
+        </div>
       </div>
 
-      <div className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+      <div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-mdd">
+        <h2 className="text-2xl font-bold mb-4">Contact Me!</h2>
         {submitted ? (
           <p className="text-green-600">Thank you for your message!</p>
         ) : (
@@ -97,9 +115,10 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-md"
+              className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-2 rounded-full text-lg font-bold shadow-lg hover:opacity-90 cursor-pointer"
+              onClick={handleSubmit}
             >
-              Submit
+              Confirm Transaction
             </button>
           </form>
         )}

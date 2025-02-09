@@ -4,10 +4,14 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  /* Aligns items vertically */
 }
+
 .contact > * {
-  margin-right: 500px; /* Adds space between elements */
+  flex: 1; /* Ensures equal width for both elements */
+  margin: 0 10px; /* Adds spacing between them */
 }
+
 .contact > *:last-child {
-  margin-right: 0; /* Removes margin from last item */
+  margin-right: 0;
 }
