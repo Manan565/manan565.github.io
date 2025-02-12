@@ -6,7 +6,7 @@ const Buttonres = () => {
       <div className="wrapper">
         {/* Resume Button (Opens PDF in New Tab) */}
         <a
-          href="/man_res_v3.pdf"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -17,7 +17,7 @@ const Buttonres = () => {
       <div className="wrapper">
         {/* LinkedIn Button (Redirects to LinkedIn Profile) */}
         <a
-          href="https://www.linkedin.com/in/manan-mehta-073630322/"
+          href="https://www.linkedin.com/in/your-linkedin-username/"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -48,23 +48,31 @@ const StyledWrapper = styled.div`
       rgba(254, 75, 8, 1) 57%,
       rgba(255, 196, 32, 1) 100%
     );
-    padding: 12px; /* Adds slight padding to the wrapper */
+    padding: 14px; /* Slightly increased padding */
+    transition: all 0.3s ease-in-out;
   }
 
   .button {
     cursor: pointer;
-    padding: 0.75rem 1.5rem;
+    padding: 0.4rem 2rem; /* Increased padding for better click area */
     border-radius: inherit;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     border: none;
     background: transparent;
     color: #fff;
-    transition: all 0.2s;
-    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    width: 12rem; /* Wider buttons */
+    font-size: 1.5rem; /* Bigger text */
     display: inline-block;
     text-decoration: none;
     text-align: center;
+  }
+
+  /* Hover Effect */
+  .wrapper:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
   }
 
   .button::before {
