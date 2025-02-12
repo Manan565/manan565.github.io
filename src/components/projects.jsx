@@ -2,7 +2,6 @@ import Cardpro from "./Cardpro";
 const projs = [
   {
     title: "Proshop",
-
     description:
       "Designed and developed a full-stack eCommerce platform for residence students using the MERN stack, enabling seamless peer-to-peer product transactions and ensuring a seamless user experience.",
   },

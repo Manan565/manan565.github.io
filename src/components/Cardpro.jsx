@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import logo from "../assets/images/proshop.png"; // Ensure correct path
 
 // eslint-disable-next-line react/prop-types
 const Cardpro = ({ title, description }) => {
@@ -9,8 +10,10 @@ const Cardpro = ({ title, description }) => {
         <div className="blob" />
 
         <div className="content">
-          <h2>{title}</h2>
+          {/* Enlarged Image at the Top */}
+          <img src={logo} alt="Project" className="project-img" />
 
+          <h2>{title}</h2>
           <p className="desc">{description}</p>
         </div>
       </div>
@@ -21,28 +24,36 @@ const Cardpro = ({ title, description }) => {
 const StyledWrapper = styled.div`
   .card {
     position: relative;
-    width: 250px;
-    height: 300px;
-    border-radius: 14px;
+    width: 360px; /* Slightly wider */
+    height: 500px; /* Increased height to fit large image */
+    border-radius: 16px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    padding: 20px; /* Added padding to prevent content from getting hidden */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+    background: white;
+  }
+
+  /* Hover Effect */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.15);
   }
 
   .bg {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 240px;
-    height: 290px;
+    width: 350px;
+    height: 490px;
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(24px);
-    border-radius: 10px;
+    border-radius: 12px;
     outline: 2px solid white;
   }
 
@@ -51,34 +62,43 @@ const StyledWrapper = styled.div`
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background-color: #ff0000;
-    opacity: 1;
+    opacity: 0.8;
     filter: blur(12px);
     animation: blob-bounce 5s infinite ease;
   }
 
   .content {
     position: relative;
-    z-index: 3; /* Ensures text stays ABOVE background and blob */
+    z-index: 3;
     text-align: center;
-    padding: 10px;
-    width: 90%;
+    padding: 15px;
+    width: 95%;
+  }
+
+  /* Bigger Image for Better Visibility */
+  .project-img {
+    width: 200px; /* Increased size */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  .tech,
-  .desc,
-  .date {
-    font-size: 0.9em;
-    margin-bottom: 5px;
+  .desc {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #444;
+    line-height: 1.4;
   }
 
   @keyframes blob-bounce {
