@@ -18,7 +18,8 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "styled-components": "^6.1.15",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.3",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
