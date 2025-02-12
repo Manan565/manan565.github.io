@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import logo from "../assets/images/proshop.png"; // Ensure correct path
 
 // eslint-disable-next-line react/prop-types
-const Cardpro = ({ title, description }) => {
+const Cardpro = ({ title, description, image }) => {
   return (
     <StyledWrapper>
       <div className="card">
@@ -11,7 +10,7 @@ const Cardpro = ({ title, description }) => {
 
         <div className="content">
           {/* Enlarged Image at the Top */}
-          <img src={logo} alt="Project" className="project-img" />
+          {image && <img src={image} alt={title} className="project-img" />}
 
           <h2>{title}</h2>
           <p className="desc">{description}</p>
