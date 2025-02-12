@@ -4,10 +4,26 @@ const Buttonres = () => {
   return (
     <StyledWrapper>
       <div className="wrapper">
-        <button className="button">Confirm Transaction</button>
+        {/* Resume Button (Opens PDF in New Tab) */}
+        <a
+          href="/man_res_v3.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          Resume
+        </a>
       </div>
       <div className="wrapper">
-        <button className="button">Confirm Transaction</button>
+        {/* LinkedIn Button (Redirects to LinkedIn Profile) */}
+        <a
+          href="https://www.linkedin.com/in/manan-mehta-073630322/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          LinkedIn
+        </a>
       </div>
     </StyledWrapper>
   );
@@ -47,6 +63,8 @@ const StyledWrapper = styled.div`
     transition: all 0.2s;
     width: fit-content;
     display: inline-block;
+    text-decoration: none;
+    text-align: center;
   }
 
   .button::before {
@@ -66,11 +84,11 @@ const StyledWrapper = styled.div`
     opacity: 0;
   }
 
-  button:active {
+  .button:active {
     transform: scale(0.95);
   }
 
-  button:focus {
+  .button:focus {
     outline-color: #fff;
   }
 `;
