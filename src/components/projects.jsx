@@ -1,7 +1,6 @@
 import Cardpro from "./Cardpro";
 
 import proshop from "../assets/images/proshop.png";
-import churn from "../assets/images/churn.png";
 import mapty from "../assets/images/mapty.png";
 import chefify from "../assets/images/chefify.png";
 import split from "../assets/images/split.png";
@@ -12,35 +11,28 @@ const projs = [
     description:
       "Designed and developed a full-stack eCommerce platform for residence students using the MERN stack, enabling seamless peer-to-peer product transactions and ensuring a seamless user experience.",
     image: proshop,
-    githubLink: "https://github.com/yourusername/proshop", // GitHub Repo Link
-  },
-  {
-    title: "Bank Churn Prediction System",
-    description:
-      "Developed a deep learning model using Python and TensorFlow to predict customer churn based on geo-demographical and transactional data, achieving an accuracy of 86 percent.",
-    image: churn,
-    githubLink: "https://github.com/yourusername/bank-churn-prediction",
+    githubLink: "https://github.com/Manan565/Proshop2", // GitHub Repo Link
   },
   {
     title: "MapWorkout",
     description:
       "Designed and implemented an interactive workout tracking application using JavaScript and Leaflet.js, allowing users to mark locations, log workout details, and visualize activities on a map.",
     image: mapty,
-    githubLink: "https://github.com/yourusername/mapworkout",
+    githubLink: "https://github.com/Manan565/WorkoutMap",
   },
   {
     title: "Chefify",
     description:
       "Designed an application that allows users to search up a recipe, bookmark it, edit it and more.",
     image: chefify,
-    githubLink: "https://github.com/yourusername/chefify",
+    githubLink: "https://github.com/Manan565/chefify",
   },
   {
     title: "SplitnSpill",
     description:
       "A simple React application that allows a group of friends to split any desired bill.",
     image: split,
-    githubLink: "https://github.com/yourusername/splitnspill",
+    githubLink: "https://github.com/Manan565/splitnspill",
   },
 ];
 

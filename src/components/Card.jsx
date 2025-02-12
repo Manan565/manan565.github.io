@@ -27,9 +27,6 @@ const Card = () => {
 
           {/* More Info Button */}
           <button className="text-[1.5em] absolute bottom-[2em] left-[2em] text-[#6C3082] group-hover:text-white duration-500">
-            <span className="relative before:h-[0.25em] before:absolute before:w-full before:content-[''] before:bg-[#6C3082] group-hover:before:bg-white duration-300 before:bottom-0 before:left-0">
-              More Info
-            </span>
             <i className="fa-solid fa-arrow-right ml-3 text-2xl" />
           </button>
 
