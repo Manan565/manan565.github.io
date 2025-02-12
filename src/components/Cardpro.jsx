@@ -9,7 +9,7 @@ const Cardpro = ({ title, description, image }) => {
         <div className="blob" />
 
         <div className="content">
-          {/* Enlarged Image at the Top */}
+          {/* Enlarged & Centered Image */}
           {image && <img src={image} alt={title} className="project-img" />}
 
           <h2>{title}</h2>
@@ -23,32 +23,32 @@ const Cardpro = ({ title, description, image }) => {
 const StyledWrapper = styled.div`
   .card {
     position: relative;
-    width: 360px; /* Slightly wider */
-    height: 500px; /* Increased height to fit large image */
-    border-radius: 16px;
+    width: 320px; /* Reduced width */
+    height: 450px; /* Reduced height */
+    border-radius: 14px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 25px;
+    padding: 20px;
     background: white;
   }
 
   /* Hover Effect */
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.15);
   }
 
   .bg {
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 350px;
-    height: 490px;
+    width: 310px;
+    height: 440px;
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(24px);
@@ -61,8 +61,8 @@ const StyledWrapper = styled.div`
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     background-color: #ff0000;
     opacity: 0.8;
@@ -74,28 +74,33 @@ const StyledWrapper = styled.div`
     position: relative;
     z-index: 3;
     text-align: center;
-    padding: 15px;
-    width: 95%;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures all content is centered */
   }
 
-  /* Bigger Image for Better Visibility */
+  /* Keep Image Size the Same */
   .project-img {
-    width: 200px; /* Increased size */
+    width: 200px; /* Same image size */
     height: auto;
-    margin-bottom: 15px;
+    margin: 0 auto 12px auto; /* Centers the image */
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    display: block;
+    align-self: center;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.3em; /* Adjusted font size */
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .desc {
-    font-size: 1em;
-    margin-top: 10px;
+    font-size: 0.95em;
+    margin-top: 8px;
     color: #444;
     line-height: 1.4;
   }
