@@ -1,6 +1,23 @@
+import { useEffect, useRef } from "react";
+import Typed from "typed.js";
 import Buttonres from "./Buttonres";
 
 const Card = () => {
+  const typedElement = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedElement.current, {
+      strings: ["Manan", "a Web Developer", "a Software Engineer"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy(); // Cleanup on unmount
+    };
+  }, []);
+
   return (
     <div className="pl-5">
       <div className="flex items-center pb-0 mb-0 pt-20">
@@ -10,15 +27,12 @@ const Card = () => {
 
           {/* More Info Button */}
           <button className="text-[1.5em] absolute bottom-[2em] left-[2em] text-[#6C3082] group-hover:text-white duration-500">
-            <span className="relative before:h-[0.25em] before:absolute before:w-full before:content-[''] before:bg-[#6C3082] group-hover:before:bg-white duration-300 before:bottom-0 before:left-0">
-              More Info
-            </span>
             <i className="fa-solid fa-arrow-right ml-3 text-2xl" />
           </button>
 
-          {/* Heading Text - Larger Size */}
+          {/* Heading Text - Larger Size with Typing Effect */}
           <h1 className="z-20 font-bold font-Poppin group-hover:text-white duration-500 text-[3.5em] leading-tight">
-            Hi! This is Manan
+            Hi! I am <span ref={typedElement} />
           </h1>
         </div>
       </div>
