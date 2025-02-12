@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+// eslint-disable-next-line react/prop-types
 const Cardpro = ({ title, description }) => {
   return (
     <StyledWrapper>
       <div className="card">
         <div className="bg" />
         <div className="blob" />
+
         <div className="content">
           <h2>{title}</h2>
 
