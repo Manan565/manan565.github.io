@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa"; // Import GitHub icon
-import { BiColor } from "react-icons/bi";
 
 // eslint-disable-next-line react/prop-types
 const Cardpro = ({ title, description, image, githubLink }) => {
