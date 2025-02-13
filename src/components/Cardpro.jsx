@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+import { BiColor } from "react-icons/bi";
 
 // eslint-disable-next-line react/prop-types
 const Cardpro = ({ title, description, image, githubLink }) => {
@@ -13,7 +14,7 @@ const Cardpro = ({ title, description, image, githubLink }) => {
           {/* Enlarged & Centered Image */}
           {image && <img src={image} alt={title} className="project-img" />}
 
-          <h2>{title}</h2>
+          <h2 className="text-orange-500">{title}</h2>
           <p className="desc">{description}</p>
 
           {/* GitHub Link Button */}

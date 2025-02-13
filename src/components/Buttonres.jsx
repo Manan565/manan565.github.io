@@ -6,7 +6,7 @@ const Buttonres = () => {
       <div className="wrapper">
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
+          href="/man_res_v3.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
@@ -17,7 +17,7 @@ const Buttonres = () => {
       <div className="wrapper">
         {/* LinkedIn Button */}
         <a
-          href="https://www.linkedin.com/in/your-linkedin-username/"
+          href="https://www.linkedin.com/in/manan-mehta-073630322/"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
