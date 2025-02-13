@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +9,6 @@ const Contact = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
-
   const [submitted, setSubmitted] = useState(false);
 
   const validate = () => {
@@ -32,8 +32,27 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Form Data:", formData);
-      setSubmitted(true);
+      emailjs
+        .send(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID, // Correct way in Vite
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: formData.name, // Matches {{from_name}}
+            reply_to: formData.email, // Matches {{reply_to}}
+            message: formData.message, // Matches {{message}}
+          },
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+            setSubmitted(true);
+            setFormData({ name: "", email: "", message: "" }); // Reset form
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
     }
   };
 
@@ -119,9 +138,8 @@ const Contact = () => {
             <button
               type="submit"
               className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-2 rounded-full text-lg font-bold shadow-lg hover:opacity-90 cursor-pointer"
-              onClick={handleSubmit}
             >
-              Confirm Transaction
+              Send Message
             </button>
           </form>
         )}
