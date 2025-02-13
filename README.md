@@ -16,8 +16,8 @@ This **fully responsive** personal portfolio website was designed and developed 
 
 ## **Features to be Added:**
 
-- **Expanded Sections **: Adding testimonials, achievements, and more to enrich the portfolio.
-- **Performance Optimized **: Lazy loading, minimized re-renders, and efficient rendering.
+- **Expanded Sections ✅**: Adding testimonials, achievements, and more to enrich the portfolio.
+- **Performance Optimized ✅**: Lazy loading, minimized re-renders, and efficient rendering.
 - **Dark Mode 🌙**: Planned feature for user customization.
 
 ## **MIT License:**
