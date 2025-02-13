@@ -4,7 +4,7 @@ const Buttonres = () => {
   return (
     <StyledWrapper>
       <div className="wrapper">
-        {/* Resume Button (Opens PDF in New Tab) */}
+        {/* Resume Button */}
         <a
           href="/resume.pdf"
           target="_blank"
@@ -15,7 +15,7 @@ const Buttonres = () => {
         </a>
       </div>
       <div className="wrapper">
-        {/* LinkedIn Button (Redirects to LinkedIn Profile) */}
+        {/* LinkedIn Button */}
         <a
           href="https://www.linkedin.com/in/your-linkedin-username/"
           target="_blank"
@@ -32,9 +32,9 @@ const Buttonres = () => {
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: row; /* Arrange buttons side by side */
-  justify-content: flex-start; /* Align buttons to the left */
-  gap: 120px; /* Space between buttons */
-  margin-top: 40px; /* Adds space above both buttons */
+  justify-content: center; /* Center below the card */
+  gap: 40px; /* Space between buttons */
+  margin-top: 10px; /* Adjusts the gap below the card */
 
   .wrapper {
     display: inline-block;
@@ -48,22 +48,21 @@ const StyledWrapper = styled.div`
       rgba(254, 75, 8, 1) 57%,
       rgba(255, 196, 32, 1) 100%
     );
-    padding: 14px; /* Slightly increased padding */
+    padding: 14px;
     transition: all 0.3s ease-in-out;
   }
 
   .button {
     cursor: pointer;
-    padding: 0.4rem 2rem; /* Increased padding for better click area */
+    padding: 0.4rem 2rem;
     border-radius: inherit;
     font-weight: 700;
-    position: relative;
     border: none;
     background: transparent;
     color: #fff;
     transition: all 0.3s ease-in-out;
-    width: 12rem; /* Wider buttons */
-    font-size: 1.5rem; /* Bigger text */
+    width: 14rem;
+    font-size: 1.5rem;
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -73,31 +72,6 @@ const StyledWrapper = styled.div`
   .wrapper:hover {
     transform: scale(1.08);
     filter: brightness(1.2);
-  }
-
-  .button::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    inset-block-end: -2px;
-    border-radius: inherit;
-    background: linear-gradient(to top, #ffc42088, transparent);
-    z-index: -1;
-    filter: blur(5px);
-    transition: all 0.2s;
-  }
-
-  .button:hover::before {
-    filter: blur(0);
-    opacity: 0;
-  }
-
-  .button:active {
-    transform: scale(0.95);
-  }
-
-  .button:focus {
-    outline-color: #fff;
   }
 `;
 
