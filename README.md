@@ -4,9 +4,8 @@ This **fully responsive** personal portfolio website was designed and developed 
 
 ## **Key Features:**
 
-- **Responsive Design 📱**: The layout and content dynamically adjust to different screen sizes, ensuring an optimal experience on **mobile**, **tablet**, and **desktop** devices.
 - **Dynamic Animations 🎨**: Includes animations such as **blink** and **typing effects**, **gradient color transitions**, and other interactive effects to engage users.
-- **Project Showcase 💻** : Features various software development projects with concise descriptions and links to **files** and **repositories**.
+- **Projects 💻** : Features various software development projects with concise descriptions and links to **repositories**.
 
 ## **Technologies Used:**
 
@@ -17,12 +16,12 @@ This **fully responsive** personal portfolio website was designed and developed 
 
 ## **Features to be Added:**
 
-- **Expanded Sections 📌**: Adding testimonials, achievements, and more to enrich the portfolio.
-- **Performance Optimized ⚡**: Lazy loading, minimized re-renders, and efficient rendering.
-- **Light/Dark Mode 🌙☀️**: Planned feature for user customization.
+- **Expanded Sections **: Adding testimonials, achievements, and more to enrich the portfolio.
+- **Performance Optimized **: Lazy loading, minimized re-renders, and efficient rendering.
+- **Dark Mode 🌙**: Planned feature for user customization.
 
 ## **MIT License:**
 
 This project is licensed under the **MIT License**.
 
-I chose the MIT License because it allows others to freely use, modify, and share my project while requiring attribution to the original author. This makes my project accessible and encourages collaboration in the open-source community without imposing strict restrictions.
+I chose the MIT License because it allows others to freely modify and share my project while requiring attribution to the original author. This allows for collaboration in the open-source community without imposing strict restrictions.
