@@ -1,7 +1,7 @@
 import Header from "./components/Header.jsx";
 import Card from "./components/Card.jsx";
 import About from "./components/About.jsx";
-import Projects from "./components/projects.jsx";
+import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 const App = () => {
   return (
