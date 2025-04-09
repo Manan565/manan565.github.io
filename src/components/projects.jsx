@@ -29,7 +29,7 @@ const projectsData = [
   {
     title: "CloudSync",
     description:
-      "Allows clients to store any files that they can think of, a common feature that most applications have. using Spring Boot for the backend and Amazon S3 to store files (images).",
+      "Allows clients to store any files that they can think of, a common feature that most applications have. Using Spring Boot for the backend and Amazon S3 to store files (images).",
     image: ami,
     githubLink: "https://github.com/Manan565/CloudSync",
     technologies: ["Java", "SpringBoot", "React", "AWS s3"],
