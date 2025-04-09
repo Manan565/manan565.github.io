@@ -7,6 +7,7 @@ import mapty from "../assets/images/mapty.png";
 import chefify from "../assets/images/chefify.png";
 import split from "../assets/images/split.png";
 import res from "../assets/images/Screenshot_2025-03-28 021625.png";
+import ami from "../assets/images/ami.png";
 
 const projectsData = [
   {
@@ -24,6 +25,14 @@ const projectsData = [
     image: proshop,
     githubLink: "https://github.com/Manan565/Proshop2",
     technologies: ["MongoDB", "Express", "React", "Node.js"],
+  },
+  {
+    title: "CloudSync",
+    description:
+      "Allows clients to store any files that they can think of, a common feature that most applications have. using Spring Boot for the backend and Amazon S3 to store files (images).",
+    image: ami,
+    githubLink: "https://github.com/Manan565/CloudSync",
+    technologies: ["Java", "SpringBoot", "React", "AWS s3"],
   },
   {
     title: "MapWorkout",
