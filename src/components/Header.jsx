@@ -18,6 +18,12 @@ const Header = () => {
           ABOUT
         </a>
         <a
+          href="#experiences"
+          className="hover:text-orange-500 transition duration-300"
+        >
+          EXPERIENCES
+        </a>
+        <a
           href="#project"
           className="hover:text-orange-500 transition duration-300"
         >

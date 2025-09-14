@@ -8,8 +8,17 @@ import chefify from "../assets/images/chefify.png";
 import split from "../assets/images/split.png";
 import res from "../assets/images/Screenshot_2025-03-28 021625.png";
 import ami from "../assets/images/ami.png";
-
+import journalimg from "../assets/images/journalimg.png"
+import libsafeimg from "../assets/images/libsafeimg.png"
 const projectsData = [
+  {
+    title: "Libsafe",
+    description:
+      "A safety tool helping you to keep your belongings safe in any public space, especially Libraries.",
+    image: libsafeimg,
+    githubLink: "https://github.com/Manan565/Libsafe",
+    technologies: ["Python", "React", "Flask","Google cloud vision"],
+  },
   {
     title: "ResuMate",
     description:
@@ -19,12 +28,12 @@ const projectsData = [
     technologies: ["React", "Next.js", "AI", "Tailwind CSS"],
   },
   {
-    title: "Proshop",
+    title: "SmartJournal",
     description:
-      "Designed and developed a full-stack eCommerce platform for residence students using the MERN stack, enabling seamless peer-to-peer product transactions and ensuring a seamless user experience.",
-    image: proshop,
-    githubLink: "https://github.com/Manan565/Proshop2",
-    technologies: ["MongoDB", "Express", "React", "Node.js"],
+      "Designed an application that allows users to log their journals for the day offering real time inteaction and sentiment analysis.",
+    image: journalimg,
+    githubLink: "https://github.com/Manan565/journal-app",
+    technologies: ["Java", "SpringBoot", "Redis", "Kafka"],
   },
   {
     title: "CloudSync",
@@ -43,21 +52,14 @@ const projectsData = [
     technologies: ["JavaScript", "Leaflet.js", "HTML5", "CSS3"],
   },
   {
-    title: "Chefify",
+    title: "Proshop",
     description:
-      "Designed an application that allows users to search up a recipe, bookmark it, edit it and more.",
-    image: chefify,
-    githubLink: "https://github.com/Manan565/chefify",
-    technologies: ["React", "JavaScript", "CSS3"],
-  },
-  {
-    title: "SplitnSpill",
-    description:
-      "A simple React application that allows a group of friends to split any desired bill.",
-    image: split,
-    githubLink: "https://github.com/Manan565/splitnspill",
-    technologies: ["React", "JavaScript", "CSS3"],
-  },
+      "Designed and developed a full-stack eCommerce platform for residence students using the MERN stack, enabling seamless peer-to-peer product transactions and ensuring a seamless user experience.",
+    image: proshop,
+    githubLink: "https://github.com/Manan565/Proshop2",
+    technologies: ["MongoDB", "Express", "React", "Node.js"],
+  }
+ 
 ];
 
 const Projects = () => {

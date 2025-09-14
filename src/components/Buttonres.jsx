@@ -6,7 +6,7 @@ const Buttonres = () => {
       <div className="wrapper">
         {/* Resume Button */}
         <a
-          href="/EA_Manan_res.pdf"
+          href="/manan_resume1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button"
