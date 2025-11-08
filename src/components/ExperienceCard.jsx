@@ -122,11 +122,11 @@ const experienceData = [
     duration: "June - August 2025",
     companyLink: "https://craftsilicon.com",
     description: [
-      "Developed REST APIs using Javascript and SQL for financial institutions, resulting in streamlined data exchange processes for banking and insurance clients",
-      "Implemented comprehensive testing strategies for payment APIs using Jest, reducing production errors by 40% and ensuring reliability for financial transactions across banking systems",
-      "Utilized Angular and Spring Boot to make a document viewing portal which will be used by over 50 employees"
+      "Developed REST APIs using Spring Boot and PostGresSQL for financial institutions, resulting in streamlined data exchange processes for banking and insurance clients",
+      "Implemented comprehensive testing strategies for payment APIs using Junit, reducing production errors by 40% and ensuring reliability for financial transactions across banking systems",
+      "Utilized Angular and Node.js to make a document viewing portal which will be used by over 50 employees"
     ],
-    skills: ["JavaScript", "SQL", "Jest", "Angular", "Spring Boot", "REST APIs"]
+    skills: ["JavaScript", "SQL", "JUnit", "Angular", "Spring Boot", "REST APIs"]
   },
   {
     title: "Software Developer",
